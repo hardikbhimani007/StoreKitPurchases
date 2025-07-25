@@ -127,6 +127,56 @@ class SubscriptionViewController: UIViewController {
         present(alert, animated: true)
     }
     
+    @IBAction func requestRefundBtnTap(_ sender: UIButton) {
+        guard selectedIndex < availablePlans.count else {
+               showAlert(title: "No Plan Selected", message: "Please select a subscription plan.")
+               return
+           }
+
+           let selectedProduct = availablePlans[selectedIndex]
+           let productID = selectedProduct.id
+
+           guard let windowScene = self.view.window?.windowScene else {
+               showAlert(title: "Error", message: "Unable to find active window scene.")
+               return
+           }
+
+           Task {
+               do {
+                   var matchingTransaction: Transaction?
+
+                   // Find the active transaction for the selected product
+                   for await result in Transaction.currentEntitlements {
+                       if case .verified(let transaction) = result,
+                          transaction.productID == productID,
+                          transaction.revocationDate == nil,
+                          transaction.expirationDate == nil || transaction.expirationDate! > Date() {
+                           matchingTransaction = transaction
+                           break
+                       }
+                   }
+
+                   guard let transaction = matchingTransaction else {
+                       showAlert(title: "No Transaction", message: "No active transaction found for this product.")
+                       return
+                   }
+
+                   let status = try await Transaction.beginRefundRequest(for: transaction.id, in: windowScene)
+
+                   switch status {
+                   case .userCancelled:
+                       showAlert(title: "Cancelled", message: "You cancelled the refund request.")
+                   case .success:
+                       showAlert(title: "Success", message: "Refund request submitted successfully.")
+                   @unknown default:
+                       showAlert(title: "Unknown", message: "An unknown refund result occurred.")
+                   }
+               } catch {
+                   showAlert(title: "Error", message: error.localizedDescription)
+               }
+           }
+    }
+    
     @IBAction func restorePurchaseBtnTap(_ sender: UIButton) {
         Task {
             do {

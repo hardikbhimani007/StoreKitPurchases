@@ -189,6 +189,17 @@
                                     <action selector="manageSubscriptionBtnTap:" destination="B53-gd-m0G" eventType="touchUpInside" id="V7I-fr-pw8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXo-95-Zk5">
+                                <rect key="frame" x="16" y="718" width="110" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ge9-PW-o9y"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Request Refund"/>
+                                <connections>
+                                    <action selector="requestRefundBtnTap:" destination="B53-gd-m0G" eventType="touchUpInside" id="qSp-Q9-skn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="219-71-ODC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -196,6 +207,7 @@
                             <constraint firstItem="apR-ji-Rxc" firstAttribute="top" secondItem="MBU-hf-UXb" secondAttribute="bottom" constant="16" id="0sa-26-Sgg"/>
                             <constraint firstItem="223-bp-uVX" firstAttribute="top" secondItem="Edl-Gr-lPS" secondAttribute="bottom" constant="16" id="1mH-k0-ZTO"/>
                             <constraint firstItem="Vba-Ka-VhE" firstAttribute="leading" secondItem="219-71-ODC" secondAttribute="leading" constant="16" id="3W1-I1-s2L"/>
+                            <constraint firstItem="0Ul-J3-Dna" firstAttribute="top" secondItem="pXo-95-Zk5" secondAttribute="bottom" constant="23" id="5Fb-0U-9RS"/>
                             <constraint firstItem="Msj-cB-cpz" firstAttribute="leading" secondItem="219-71-ODC" secondAttribute="leading" constant="16" id="5K4-IF-fri"/>
                             <constraint firstItem="MBU-hf-UXb" firstAttribute="leading" secondItem="219-71-ODC" secondAttribute="leading" constant="16" id="6aI-Pg-ofJ"/>
                             <constraint firstItem="219-71-ODC" firstAttribute="trailing" secondItem="223-bp-uVX" secondAttribute="trailing" constant="16" id="ALg-jV-xV5"/>
@@ -212,10 +224,13 @@
                             <constraint firstItem="apR-ji-Rxc" firstAttribute="leading" secondItem="219-71-ODC" secondAttribute="leading" constant="16" id="Ox6-EM-1T6"/>
                             <constraint firstItem="Vba-Ka-VhE" firstAttribute="top" secondItem="Msj-cB-cpz" secondAttribute="bottom" constant="14" id="PB0-mM-khz"/>
                             <constraint firstItem="MBU-hf-UXb" firstAttribute="top" secondItem="223-bp-uVX" secondAttribute="bottom" constant="8" id="PHJ-QS-LIp"/>
+                            <constraint firstItem="Hs8-f7-O79" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Msj-cB-cpz" secondAttribute="trailing" constant="8" symbolic="YES" id="SmE-vq-RlJ"/>
                             <constraint firstItem="n9k-h9-nrp" firstAttribute="leading" secondItem="219-71-ODC" secondAttribute="leading" constant="16" id="WcE-F6-MpZ"/>
                             <constraint firstItem="Hs8-f7-O79" firstAttribute="top" secondItem="apR-ji-Rxc" secondAttribute="bottom" constant="8" id="XYk-sw-wCu"/>
                             <constraint firstItem="219-71-ODC" firstAttribute="trailing" secondItem="Hs8-f7-O79" secondAttribute="trailing" constant="16" id="aY2-XQ-pN4"/>
+                            <constraint firstItem="pXo-95-Zk5" firstAttribute="leading" secondItem="219-71-ODC" secondAttribute="leading" constant="16" id="d6p-3f-IWg"/>
                             <constraint firstItem="223-bp-uVX" firstAttribute="leading" secondItem="219-71-ODC" secondAttribute="leading" constant="16" id="hwF-y2-n8v"/>
+                            <constraint firstItem="219-71-ODC" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pXo-95-Zk5" secondAttribute="trailing" symbolic="YES" id="jYL-oM-TcX"/>
                             <constraint firstItem="n9k-h9-nrp" firstAttribute="top" secondItem="Vba-Ka-VhE" secondAttribute="bottom" constant="8" id="q2W-5q-as6"/>
                             <constraint firstItem="219-71-ODC" firstAttribute="trailing" secondItem="apR-ji-Rxc" secondAttribute="trailing" constant="16" id="qfL-fE-jVR"/>
                             <constraint firstItem="Edl-Gr-lPS" firstAttribute="top" secondItem="219-71-ODC" secondAttribute="top" constant="34" id="th7-Mx-vo6"/>
