@@ -1,0 +1,226 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "50DC8CE9",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : true,
+    "_billingGracePeriodEnabled" : true,
+    "_billingIssuesEnabled" : false,
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : {
+          "index" : 2,
+          "type" : "generic"
+        },
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : {
+          "index" : 3,
+          "type" : "generic"
+        },
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : {
+          "index" : 0,
+          "type" : "verification"
+        },
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : {
+          "index" : 2,
+          "type" : "generic"
+        },
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : {
+          "index" : 2,
+          "type" : "generic"
+        },
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : {
+          "index" : 2,
+          "type" : "generic"
+        },
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : {
+          "index" : 3,
+          "type" : "generic"
+        },
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : {
+          "index" : 0,
+          "type" : "refund request"
+        },
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : {
+          "index" : 4,
+          "type" : "generic"
+        },
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "805C3797",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Monthly Subscription",
+          "locale" : "en_US"
+        }
+      ],
+      "name" : "AutoRenewable Subscriptions",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+            {
+              "displayPrice" : "50.00",
+              "internalID" : "940FFBB8",
+              "offerID" : "PROMO50M",
+              "paymentMode" : "payUpFront",
+              "referenceName" : "Monthly Promotional Offers",
+              "subscriptionPeriod" : "P1M"
+            }
+          ],
+          "codeOffers" : [
+            {
+              "displayPrice" : "50.00",
+              "eligibility" : [
+                "existing",
+                "new",
+                "expired"
+              ],
+              "internalID" : "EB4880D9",
+              "isStackable" : true,
+              "paymentMode" : "payUpFront",
+              "referenceName" : "Monthly Offer Code",
+              "subscriptionPeriod" : "P1M"
+            }
+          ],
+          "displayPrice" : "99.00",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "C0747086",
+          "introductoryOffer" : {
+            "displayPrice" : "0.99",
+            "internalID" : "7153A4BA",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Monthly Premium Content",
+              "displayName" : "Monthly Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.prodev.app.StoreKitDemo.subscription.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly Subscription",
+          "subscriptionGroupID" : "805C3797",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+            {
+              "displayPrice" : "50.00",
+              "internalID" : "C3D2CD89",
+              "offerID" : "PROMO50Y",
+              "paymentMode" : "payUpFront",
+              "referenceName" : "Yearly Promotional Offers",
+              "subscriptionPeriod" : "P1Y"
+            }
+          ],
+          "codeOffers" : [
+            {
+              "displayPrice" : "50.00",
+              "eligibility" : [
+                "new",
+                "expired",
+                "existing"
+              ],
+              "internalID" : "5276ED2A",
+              "isStackable" : true,
+              "paymentMode" : "payUpFront",
+              "referenceName" : "Yearly Offer Code",
+              "subscriptionPeriod" : "P1M"
+            }
+          ],
+          "displayPrice" : "120.00",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "90E90902",
+          "introductoryOffer" : {
+            "internalID" : "2E83A8C0",
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P1W"
+          },
+          "localizations" : [
+            {
+              "description" : "Yearly Premium Content",
+              "displayName" : "Yearly Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.prodev.app.StoreKitDemo.subscription.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Yearly Subscription",
+          "subscriptionGroupID" : "805C3797",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

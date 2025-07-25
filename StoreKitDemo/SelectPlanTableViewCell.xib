@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-SemiBold.ttf">
+            <string>TitilliumWeb-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SelectPlanTableViewCell" rowHeight="120" id="KGk-i7-Jjw" customClass="SelectPlanTableViewCell" customModule="StoreKitDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPu-N2-uoK">
+                        <rect key="frame" x="16" y="16" width="328" height="88"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Subscription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5v-NA-RdY">
+                                <rect key="frame" x="16" y="16" width="154.33333333333334" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="sc1-Ts-B2v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get full access for just 99$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iV4-yv-nmi">
+                                <rect key="frame" x="16" y="48" width="195.33333333333334" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="6Tg-OE-pFS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_check" translatesAutoresizingMaskIntoConstraints="NO" id="bcd-pv-Dv5">
+                                <rect key="frame" x="278" y="32" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="IpK-d9-vDc"/>
+                                    <constraint firstAttribute="height" constant="24" id="l23-pn-fWw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iV4-yv-nmi" firstAttribute="top" secondItem="L5v-NA-RdY" secondAttribute="bottom" constant="8" id="10y-KW-gpr"/>
+                            <constraint firstAttribute="height" constant="88" id="6Nm-pg-uo6"/>
+                            <constraint firstAttribute="trailing" secondItem="bcd-pv-Dv5" secondAttribute="trailing" constant="26" id="B99-nQ-NNW"/>
+                            <constraint firstAttribute="bottom" secondItem="iV4-yv-nmi" secondAttribute="bottom" constant="16" id="KJg-Vx-agk"/>
+                            <constraint firstItem="bcd-pv-Dv5" firstAttribute="centerY" secondItem="UPu-N2-uoK" secondAttribute="centerY" id="TnV-5X-hAL"/>
+                            <constraint firstItem="iV4-yv-nmi" firstAttribute="leading" secondItem="UPu-N2-uoK" secondAttribute="leading" constant="16" id="gZR-12-9jk"/>
+                            <constraint firstItem="L5v-NA-RdY" firstAttribute="top" secondItem="UPu-N2-uoK" secondAttribute="top" constant="16" id="k5e-F5-Wy3"/>
+                            <constraint firstItem="L5v-NA-RdY" firstAttribute="leading" secondItem="UPu-N2-uoK" secondAttribute="leading" constant="16" id="n40-fM-Cub"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EB6-g1-VLe">
+                        <rect key="frame" x="280" y="8" width="50" height="18"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Active" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3E-ng-Oc8">
+                                <rect key="frame" x="8.3333333333333321" y="2" width="33.333333333333343" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="SH5-bL-sZh"/>
+                            <constraint firstAttribute="width" constant="50" id="hoF-8V-id9"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UPu-N2-uoK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1Ft-XZ-8L7"/>
+                    <constraint firstAttribute="bottom" secondItem="UPu-N2-uoK" secondAttribute="bottom" constant="16" id="1Xa-rH-s9C"/>
+                    <constraint firstItem="EB6-g1-VLe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="ZV6-6u-8ZU"/>
+                    <constraint firstItem="UPu-N2-uoK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="aIG-RH-HZD"/>
+                    <constraint firstAttribute="trailing" secondItem="UPu-N2-uoK" secondAttribute="trailing" constant="16" id="lVZ-3i-nHh"/>
+                    <constraint firstItem="UPu-N2-uoK" firstAttribute="trailing" secondItem="EB6-g1-VLe" secondAttribute="trailing" constant="14" id="xis-aO-u3D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activeVw" destination="EB6-g1-VLe" id="7AN-8K-Isc"/>
+                <outlet property="contentVw" destination="H2p-sc-9uM" id="GiZ-Yh-XjC"/>
+                <outlet property="mainVw" destination="UPu-N2-uoK" id="Xo1-Cl-Jz3"/>
+                <outlet property="radioImg" destination="bcd-pv-Dv5" id="MYr-gZ-tVN"/>
+                <outlet property="subtitleLbl" destination="iV4-yv-nmi" id="9YL-hM-IxG"/>
+                <outlet property="titleLbl" destination="L5v-NA-RdY" id="3g3-Vn-Z8G"/>
+            </connections>
+            <point key="canvasLocation" x="25.954198473282442" y="4.2253521126760569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_check" width="64" height="64"/>
+    </resources>
+</document>
