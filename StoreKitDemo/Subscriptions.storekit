@@ -128,8 +128,8 @@
             {
               "displayPrice" : "50.00",
               "eligibility" : [
-                "existing",
                 "new",
+                "existing",
                 "expired"
               ],
               "internalID" : "EB4880D9",
@@ -181,8 +181,8 @@
               "displayPrice" : "50.00",
               "eligibility" : [
                 "new",
-                "expired",
-                "existing"
+                "existing",
+                "expired"
               ],
               "internalID" : "5276ED2A",
               "isStackable" : true,
